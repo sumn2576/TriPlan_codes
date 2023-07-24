@@ -1,0 +1,41 @@
+.tab_radio{
+    /*ラジオボタンは表示しない*/
+    display:none;
+  }
+  .tab_menu{
+    /*タブの基本スタイル*/
+    border: solid black;
+    border-width:1px 1px 0 1px;
+    border-radius:3px 3px 0 0;
+    margin: 0 2px;
+    padding:0 3px;
+    width:29%;
+    display:inline-block;
+    /*選択されていないタブは透明色*/
+    background-color:gray;
+  }
+  
+  .tab_radio:checked + .tab_menu{
+    /*選択されているタブは白背景*/
+    /* タブコンテンツの上線にかぶせて隠す */
+    background-color:white;
+  }
+  
+  .tab_contains{
+    /*コンテンツの基本スタイル*/
+    width:65%;
+    border: solid black 1px;
+    border-radius:3px;
+    padding:1rem;
+    /*選択されたタブで上線をかぶせる*/
+    margin-top:-1px;
+    background-color:white;
+    /*選択されていないコンテンツは非表示*/
+    display:none;
+  }
+  
+  #tab_radio_A:checked ~ #tab_contains_A,
+  #tab_radio_B:checked ~ #tab_contains_B,
+  #tab_radio_C:checked ~ #tab_contains_C{
+    display:block;
+  }

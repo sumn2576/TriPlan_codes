@@ -1,0 +1,70 @@
+/*userhome.css*/
+
+/*HEADER*/
+
+div#header {
+    margin: 10px 25px 10px 25px;
+    text-align: center;
+}
+
+div#header h1 {
+    color: #ffffff;
+}
+
+/*MENU*/
+
+div#menu {
+    width: 30%;
+    margin: 10px 10px 10px 25px;
+    display: inline;
+    float: left;
+}
+
+/*NEW PLAN*/
+
+div#new {
+    width: 50%;
+    margin: 10px 25px 10px 10px;
+    display: inline;
+    float: right;
+}
+
+div#new_header {
+    height: 26px;
+    padding: 4px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #d33c43;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+ul#new_body {
+    padding-bottom: 6px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #ffffff;
+    height: 255pt;
+    overflow: scroll;
+}
+
+ul#new_body li {
+    font-size: 40%;
+    list-style-type: none;
+    display: inline;
+}
+
+ul#new_body li table {
+    background-color: #eeeeee;
+    margin: auto;
+}
+
+ul#new_body li table:hover {
+    background-color: #f8e6e3;
+}
+
+ul#new_body li td {
+    text-align: center;
+}
